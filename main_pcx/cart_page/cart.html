@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container py-4">
+        <h2 class="mb-4">Your Cart</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Product</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="items">
+                        </tbody>
+                        <tfoot>
+                            <th scope="col"></th>
+                            <th scope="col" id="total"></th>
+                            <th scope="col"> </th>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-success ms-2" id="sentEmail"><a href="#" style="text-decoration: none; color: white;">Checkout</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/smtp.js/dist/smtp.min.js"></script>
+    <script src="../var.js"></script>
+    <script src="./cart.js"></script>
+    <script>
+        // function updateItemInCart() {
+        //     var cartContainer = document.getElementById("items")
+        //     var t = document.getElementById("total")
+
+        //     getCart().forEach(item => {
+        //         const cartItem = `
+        //         <tr id="items">
+        //                         <th scope="col">${item.name}</th>
+        //                         <th scope="col">${item.price}</th>
+        //                         <th scope="col">
+        //                             <button class="btn btn-danger delete-from-cart" id="delete-from-cart" data-id="${item.id}" >Delete</button>      
+        //                         </th>
+        //                     </tr>
+    
+        // `;
+        //         cartContainer.innerHTML += cartItem;
+        //     });
+        //     t.innerText = totalCart();
+
+        // }
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     updateItemInCart();
+        //     document.querySelectorAll(".delete-from-cart").forEach(element => {
+        //         element.addEventListener("click", () => {
+        //             deleteInCart(event.target.getAttribute("data-id"));
+        //             updateItemInCart();
+        //             location.reload();
+        //         })
+        //     });
+        // },);
+
+
+    </script>
+
+</body>
+
+</html>

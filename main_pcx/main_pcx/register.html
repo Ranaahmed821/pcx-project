@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Document</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+        <div class="card card0 border-0">
+            <div class="row d-flex">
+                <div class="col-lg-6">
+                    <div class="card1 bg-light pb-5">
+                        <div class="row px-3 justify-content-center mt-4 mb-5">
+                            <img src="/img/Logo.jpg" class="image" style="width: 750px; height: 450px;">
+                        </div>
+                        <div class="row px-3 text-center justify-content-center">
+                            <h4>"Welcome to our community PCX"</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card2 card border-0 px-4 py-5">
+                        <h3 class="mb-1">Create your PCX account</h3>
+                        <p class="mb-4 text-sm">Already have an account? <a class="text-primary login" href="./login.html">Log In</a></p>
+                        <div class="row px-3">
+                        </div>
+                        <div class="row px-3">
+                            <label class="mb-0">
+                                <h6 class="mb-0 text-sm">Full Name</h6>
+                            </label>
+                            <input type="text" name="fname" id="fname">
+                        </div>
+                        <div class="row px-3">
+                            <label class="mb-0">
+                                <h6 class="mb-0 text-sm">Email Address</h6>
+                            </label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div class="row px-3">
+                            <label class="mb-0">
+                                <h6 class="mb-0 text-sm">Password</h6>
+                            </label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="row px-3">
+                            <label class="mb-0">
+                                <h6 class="mb-0 text-sm">Phone number</h6>
+                            </label>
+                            <input type="number " name="pnumber" id="pNumber">
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-5">
+                                <button class="btn btn-primary mt-3 text-center mb-1" onclick="register()">Create Account</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./var.js"></script>
+    <script src="./register.js"></script>
+    <script src="./login.html"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
